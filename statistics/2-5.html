@@ -1,0 +1,250 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart_1);
+      google.setOnLoadCallback(drawChart_2);
+
+      function drawChart_1() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'データセット');
+        data.addColumn('number', '度数');
+        data.addRows(17);
+        data.setValue(0, 0, '47');
+        data.setValue(0, 1, 0);
+        data.setValue(1, 0, '48');
+        data.setValue(1, 1, 1);
+        data.setValue(2, 0, '49');
+        data.setValue(2, 1, 2);
+        data.setValue(3, 0, '50');
+        data.setValue(3, 1, 4);
+        data.setValue(4, 0, '51');
+        data.setValue(4, 1, 6);
+        data.setValue(5, 0, '52');
+        data.setValue(5, 1, 9);
+        data.setValue(6, 0, '53');
+        data.setValue(6, 1, 11);
+        data.setValue(7, 0, '54');
+        data.setValue(7, 1, 11);
+        data.setValue(8, 0, '55');
+        data.setValue(8, 1, 13);
+        data.setValue(9, 0, '56');
+        data.setValue(9, 1, 11);
+        data.setValue(10, 0, '57');
+        data.setValue(10, 1, 10);
+        data.setValue(11, 0, '58');
+        data.setValue(11, 1, 9);
+        data.setValue(12, 0, '59');
+        data.setValue(12, 1, 6);
+        data.setValue(13, 0, '60');
+        data.setValue(13, 1, 4);
+        data.setValue(14, 0, '61');
+        data.setValue(14, 1, 2);
+        data.setValue(15, 0, '62');
+        data.setValue(15, 1, 1);
+        data.setValue(16, 0, '63');
+        data.setValue(16, 1, 0);
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_1'));
+        chart.draw(data, {width: 800, height: 400, title: 'みかん（個数）'});
+      }
+
+      function drawChart_2() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'データセット');
+        data.addColumn('number', '相対度数');
+        data.addRows(17);
+        data.setValue(0, 0, '47');
+        data.setValue(0, 1, 0.00);
+        data.setValue(1, 0, '48');
+        data.setValue(1, 1, 0.01);
+        data.setValue(2, 0, '49');
+        data.setValue(2, 1, 0.02);
+        data.setValue(3, 0, '50');
+        data.setValue(3, 1, 0.04);
+        data.setValue(4, 0, '51');
+        data.setValue(4, 1, 0.06);
+        data.setValue(5, 0, '52');
+        data.setValue(5, 1, 0.09);
+        data.setValue(6, 0, '53');
+        data.setValue(6, 1, 0.11);
+        data.setValue(7, 0, '54');
+        data.setValue(7, 1, 0.11);
+        data.setValue(8, 0, '55');
+        data.setValue(8, 1, 0.13);
+        data.setValue(9, 0, '56');
+        data.setValue(9, 1, 0.11);
+        data.setValue(10, 0, '57');
+        data.setValue(10, 1, 0.10);
+        data.setValue(11, 0, '58');
+        data.setValue(11, 1, 0.09);
+        data.setValue(12, 0, '59');
+        data.setValue(12, 1, 0.06);
+        data.setValue(13, 0, '60');
+        data.setValue(13, 1, 0.04);
+        data.setValue(14, 0, '61');
+        data.setValue(14, 1, 0.02);
+        data.setValue(15, 0, '62');
+        data.setValue(15, 1, 0.01);
+        data.setValue(16, 0, '63');
+        data.setValue(16, 1, 0.00);
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_2'));
+        chart.draw(data, {width: 800, height: 400, title: 'みかん（割合＝確率分布）'});
+      }
+
+    </script>
+  </head>
+
+  <body>
+
+<h1>確率分布</h1>
+<h3>みかんのお話</h3>
+<table>
+  <thead>
+    <tr>
+      <th>データセット</th>
+      <th>度数</th>
+      <th>相対度数（全体の中で占める割合）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>47</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>1</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>2</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>4</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>6</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>9</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>11</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>11</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>13</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>11</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>10</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>9</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>6</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>4</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>2</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>1</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <div id="chart_div_1"></div>
+
+
+    <div id="chart_div_2"></div>
+
+<p>確率？何の確率？</p>
+<p>「データセットにおいてデータxは、全データ中のpパーセントを占める」という確率</p>
+<br/>
+<br/>
+<p>ということは？</p>
+<p>50gから52gまでのみかんが全体に占める割合は、</p>
+<img src="http://chart.apis.google.com/chart?cht=tx&chl=0.04%2B0.06%2B0.09%3D0.19%3D19%25" /><br/>
+<br/>
+<br/>
+<p>このヒストグラムをあらわす関数を仮にf(x)とすると、</p>
+<p>f(x)の特定の範囲の面積（積分）が、データセット中にその範囲のデータが占める割合、ということになりますよね。</p>
+<img src="http://chart.apis.google.com/chart?cht=tx&chl=%5Cint_%7B50%7D%5E%7B52%7D%20f(x)dx" /><br/>
+<p>ということで、このf(x)を確率密度関数、とよびます。</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>え？でもこう書いてあるyo？</p>
+<p>「確率密度関数は確率そのものをあらわしているのではなく、起こりやすさの程度を表していると考える」</p>
+<br/>
+<br/>
+<p>？？</p>
+<p>意味がわかりません。</p>
+<br/>
+<br/>
+<p>理解するには？</p>
+<p>「データセットにおいてデータxは、全データ中のpパーセントを占める」</p>
+<p>「データセットの中から1つのデータを観測するとき、それがxである確立はpパーセントである」</p>
+<p>上記を同じとみなせば、理解が可能です。</p>
+<br/>
+<br/>
+<p>つまり？</p>
+<p>「50gから52gまでのみかんが全体に占める割合」＝「全部のみかんの中から1つを取り出したときに、それが50gから52gである確率」とみなす、ということです。</p>
+<p>「全部のみかんの中から1つを取り出したときに、それが50gから52gである確率」は、要は「起こりやすさ」ですよね。</p>
+<p>数学的にはこのみなし方は間違いだそうですが、どこがどう間違いなのかはわかりませんでした。。。</p>
+
+
+  </body>
+</html>
+
